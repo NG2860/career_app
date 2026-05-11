@@ -1,0 +1,452 @@
+
+<h2 class="sr-only">Khảo sát hướng nghiệp chuyên sâu dành cho du học sinh Việt tại Hàn Quốc</h2>
+
+<style>
+.step{display:none}.step.active{display:block}
+.pb{height:3px;background:var(--color-border-tertiary);border-radius:2px;margin-bottom:2rem}
+.pf{height:100%;background:var(--color-text-primary);border-radius:2px;transition:width .5s ease}
+.lbl{font-size:11px;letter-spacing:.08em;color:var(--color-text-tertiary);text-transform:uppercase;margin-bottom:.5rem;margin-top:0}
+.lr{padding:.875rem 0;border-bottom:.5px solid var(--color-border-tertiary)}
+.lr:last-child{border-bottom:none}
+.lq{font-size:14px;line-height:1.5;margin:0 0 .625rem;color:var(--color-text-primary)}
+.ls{display:flex;gap:5px}
+.lb{flex:1;padding:7px 3px;background:var(--color-background-secondary);border:.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-md);font-size:13px;font-weight:500;color:var(--color-text-secondary);cursor:pointer;text-align:center;transition:all .12s}
+.lb:hover{background:var(--color-background-primary);border-color:var(--color-border-secondary);color:var(--color-text-primary)}
+.lb.sel{background:var(--color-text-primary);color:var(--color-background-primary);border-color:var(--color-text-primary)}
+.tg{padding:5px 13px;border:.5px solid var(--color-border-secondary);border-radius:100px;background:transparent;font-size:13px;color:var(--color-text-secondary);cursor:pointer;transition:all .12s}
+.tg:hover{border-color:var(--color-border-primary);color:var(--color-text-primary)}
+.tg.sel{background:var(--color-text-primary);color:var(--color-background-primary);border-color:var(--color-text-primary)}
+.cc{background:var(--color-background-secondary);border-radius:var(--border-radius-lg);padding:1.125rem;margin-bottom:10px}
+.sb{height:7px;background:var(--color-border-tertiary);border-radius:4px;overflow:hidden;margin-top:5px}
+.sf{height:100%;background:var(--color-text-primary);border-radius:4px;transition:width .9s ease}
+</style>
+
+<div id="app" style="max-width:620px;margin:0 auto;padding:1.25rem 0">
+
+<div class="pb"><div class="pf" id="pf" style="width:0"></div></div>
+
+<!-- STEP 0: LANDING -->
+<div id="s0" class="step active">
+  <p class="lbl" style="margin-top:.5rem">Career Compass · 2026–2035</p>
+  <h1 style="font-size:23px;font-weight:500;line-height:1.35;margin:0 0 .875rem">Hướng nghiệp chuyên sâu<br>cho du học sinh Việt tại Hàn</h1>
+  <p style="font-size:14px;color:var(--color-text-secondary);line-height:1.7;margin-bottom:1.75rem">Phân tích tính cách, năng lực AI Era và đưa ra định hướng sự nghiệp cá nhân hóa dựa trên MBTI + Holland Code + Career Anchors.</p>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:1.75rem">
+    <div style="background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:.875rem">
+      <i class="ti ti-brain" style="font-size:17px;color:var(--color-text-secondary);display:block;margin-bottom:5px" aria-hidden="true"></i>
+      <p style="font-size:12px;font-weight:500;margin:0 0 2px">45 câu hỏi</p>
+      <p style="font-size:11px;color:var(--color-text-tertiary);margin:0">Tính cách & năng lực</p>
+    </div>
+    <div style="background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:.875rem">
+      <i class="ti ti-clock" style="font-size:17px;color:var(--color-text-secondary);display:block;margin-bottom:5px" aria-hidden="true"></i>
+      <p style="font-size:12px;font-weight:500;margin:0 0 2px">10–15 phút</p>
+      <p style="font-size:11px;color:var(--color-text-tertiary);margin:0">Hoàn thành nhanh</p>
+    </div>
+    <div style="background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:.875rem">
+      <i class="ti ti-chart-bar" style="font-size:17px;color:var(--color-text-secondary);display:block;margin-bottom:5px" aria-hidden="true"></i>
+      <p style="font-size:12px;font-weight:500;margin:0 0 2px">Kết quả riêng</p>
+      <p style="font-size:11px;color:var(--color-text-tertiary);margin:0">Cá nhân hóa 100%</p>
+    </div>
+  </div>
+  <div style="border:.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:1rem;margin-bottom:1.5rem">
+    <p style="font-size:12px;font-weight:500;margin:0 0 6px">Bộ khảo sát kết hợp</p>
+    <div style="display:flex;flex-wrap:wrap;gap:6px">
+      <span style="font-size:11px;padding:3px 10px;background:var(--color-background-secondary);border-radius:100px;color:var(--color-text-secondary)">MBTI</span>
+      <span style="font-size:11px;padding:3px 10px;background:var(--color-background-secondary);border-radius:100px;color:var(--color-text-secondary)">Holland Code RIASEC</span>
+      <span style="font-size:11px;padding:3px 10px;background:var(--color-background-secondary);border-radius:100px;color:var(--color-text-secondary)">Career Anchors</span>
+      <span style="font-size:11px;padding:3px 10px;background:var(--color-background-secondary);border-radius:100px;color:var(--color-text-secondary)">AI Era Readiness</span>
+      <span style="font-size:11px;padding:3px 10px;background:var(--color-background-secondary);border-radius:100px;color:var(--color-text-secondary)">Future Career 2035</span>
+    </div>
+  </div>
+  <button onclick="goTo(1)" style="width:100%;padding:.875rem;font-size:15px;font-weight:500">Bắt đầu khảo sát →</button>
+  <p style="font-size:11px;color:var(--color-text-tertiary);text-align:center;margin-top:.875rem">Dữ liệu được lưu ẩn danh phục vụ nghiên cứu xu hướng nghề nghiệp du học sinh</p>
+</div>
+
+<!-- STEP 1: BASIC INFO -->
+<div id="s1" class="step">
+  <p class="lbl">Bước 1 / 6</p>
+  <h2 style="font-size:19px;font-weight:500;margin-bottom:.375rem">Thông tin cơ bản</h2>
+  <p style="font-size:14px;color:var(--color-text-secondary);margin-bottom:1.25rem">Giúp cá nhân hóa kết quả phân tích</p>
+  <div style="display:flex;flex-direction:column;gap:.875rem;margin-bottom:1.5rem">
+    <div>
+      <label style="font-size:13px;color:var(--color-text-secondary);display:block;margin-bottom:5px">Họ và tên <span style="color:var(--color-text-tertiary)">(tùy chọn)</span></label>
+      <input type="text" id="i-name" placeholder="Nguyễn Văn A" style="width:100%;box-sizing:border-box">
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+      <div>
+        <label style="font-size:13px;color:var(--color-text-secondary);display:block;margin-bottom:5px">Trường đại học</label>
+        <input type="text" id="i-school" placeholder="Daegu University" style="width:100%;box-sizing:border-box">
+      </div>
+      <div>
+        <label style="font-size:13px;color:var(--color-text-secondary);display:block;margin-bottom:5px">Chuyên ngành</label>
+        <input type="text" id="i-major" placeholder="Computer Science" style="width:100%;box-sizing:border-box">
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+      <div>
+        <label style="font-size:13px;color:var(--color-text-secondary);display:block;margin-bottom:5px">TOPIK Level</label>
+        <select id="i-topik" style="width:100%;box-sizing:border-box">
+          <option value="">Chọn level</option>
+          <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>Chưa thi</option>
+        </select>
+      </div>
+      <div>
+        <label style="font-size:13px;color:var(--color-text-secondary);display:block;margin-bottom:5px">GPA</label>
+        <input type="number" id="i-gpa" placeholder="3.5" min="0" max="4.5" step="0.01" style="width:100%;box-sizing:border-box">
+      </div>
+    </div>
+    <div>
+      <label style="font-size:13px;color:var(--color-text-secondary);display:block;margin-bottom:7px">Mục tiêu sau tốt nghiệp</label>
+      <div style="display:flex;flex-wrap:wrap;gap:7px">
+        <button class="tg" data-grp="goals" onclick="toggleTag(this)">Làm tại Hàn</button>
+        <button class="tg" data-grp="goals" onclick="toggleTag(this)">Học Master tại Hàn</button>
+        <button class="tg" data-grp="goals" onclick="toggleTag(this)">Về Việt Nam</button>
+        <button class="tg" data-grp="goals" onclick="toggleTag(this)">Khởi nghiệp</button>
+        <button class="tg" data-grp="goals" onclick="toggleTag(this)">Công ty quốc tế</button>
+        <button class="tg" data-grp="goals" onclick="toggleTag(this)">Chưa rõ</button>
+      </div>
+    </div>
+    <div>
+      <label style="font-size:13px;color:var(--color-text-secondary);display:block;margin-bottom:7px">Lĩnh vực quan tâm</label>
+      <div style="display:flex;flex-wrap:wrap;gap:7px">
+        <button class="tg" data-grp="prefs" onclick="toggleTag(this)">AI/Data</button>
+        <button class="tg" data-grp="prefs" onclick="toggleTag(this)">Software</button>
+        <button class="tg" data-grp="prefs" onclick="toggleTag(this)">Design/UX</button>
+        <button class="tg" data-grp="prefs" onclick="toggleTag(this)">Business</button>
+        <button class="tg" data-grp="prefs" onclick="toggleTag(this)">Giáo dục</button>
+        <button class="tg" data-grp="prefs" onclick="toggleTag(this)">Startup</button>
+        <button class="tg" data-grp="prefs" onclick="toggleTag(this)">Research</button>
+        <button class="tg" data-grp="prefs" onclick="toggleTag(this)">NGO/Xã hội</button>
+      </div>
+    </div>
+  </div>
+  <div style="display:flex;gap:10px">
+    <button onclick="goTo(0)">← Quay lại</button>
+    <button onclick="goTo(2)" style="flex:1">Tiếp theo →</button>
+  </div>
+</div>
+
+<!-- STEP 2: SECTION A -->
+<div id="s2" class="step">
+  <p class="lbl">Bước 2 / 6 — Tính cách & Năng lượng</p>
+  <h2 style="font-size:19px;font-weight:500;margin-bottom:.25rem">Phần A · Tính cách</h2>
+  <p style="font-size:13px;color:var(--color-text-secondary);margin-bottom:.25rem">Chấm điểm từ 1 đến 5 cho mỗi câu</p>
+  <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--color-text-tertiary);margin-bottom:1.25rem">
+    <span>1 = Hoàn toàn không đúng</span><span>5 = Rất đúng với mình</span>
+  </div>
+  <div id="qa-c"></div>
+  <div style="display:flex;gap:10px;margin-top:1.25rem">
+    <button onclick="goTo(1)">← Quay lại</button>
+    <button onclick="validateAndGo('A',3)" style="flex:1">Tiếp theo →</button>
+  </div>
+</div>
+
+<!-- STEP 3: SECTION B -->
+<div id="s3" class="step">
+  <p class="lbl">Bước 3 / 6 — Năng lực tương lai</p>
+  <h2 style="font-size:19px;font-weight:500;margin-bottom:.25rem">Phần B · Năng lực AI Era</h2>
+  <p style="font-size:13px;color:var(--color-text-secondary);margin-bottom:.25rem">Chấm điểm từ 1 đến 5 cho mỗi câu</p>
+  <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--color-text-tertiary);margin-bottom:1.25rem">
+    <span>1 = Hoàn toàn không đúng</span><span>5 = Rất đúng với mình</span>
+  </div>
+  <div id="qb-c"></div>
+  <div style="display:flex;gap:10px;margin-top:1.25rem">
+    <button onclick="goTo(2)">← Quay lại</button>
+    <button onclick="validateAndGo('B',4)" style="flex:1">Tiếp theo →</button>
+  </div>
+</div>
+
+<!-- STEP 4: SECTION C -->
+<div id="s4" class="step">
+  <p class="lbl">Bước 4 / 6 — Môi trường làm việc</p>
+  <h2 style="font-size:19px;font-weight:500;margin-bottom:.25rem">Phần C · Môi trường lý tưởng</h2>
+  <p style="font-size:13px;color:var(--color-text-secondary);margin-bottom:.25rem">Chấm điểm từ 1 đến 5 cho mỗi câu</p>
+  <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--color-text-tertiary);margin-bottom:1.25rem">
+    <span>1 = Hoàn toàn không đúng</span><span>5 = Rất đúng với mình</span>
+  </div>
+  <div id="qc-c"></div>
+  <div style="display:flex;gap:10px;margin-top:1.25rem">
+    <button onclick="goTo(3)">← Quay lại</button>
+    <button onclick="validateAndGo('C',5)" style="flex:1">Tiếp theo →</button>
+  </div>
+</div>
+
+<!-- STEP 5: OPEN REFLECTION -->
+<div id="s5" class="step">
+  <p class="lbl">Bước 5 / 6 — Phản tư cá nhân</p>
+  <h2 style="font-size:19px;font-weight:500;margin-bottom:.375rem">Câu hỏi mở</h2>
+  <p style="font-size:14px;color:var(--color-text-secondary);margin-bottom:1.25rem">Không có đáp án đúng sai — hãy thành thật với bản thân</p>
+  <div style="display:flex;flex-direction:column;gap:1.125rem;margin-bottom:1.75rem">
+    <div>
+      <label style="font-size:14px;font-weight:500;display:block;margin-bottom:5px;line-height:1.5">Nếu không sợ thất bại, bạn muốn làm nghề gì?</label>
+      <textarea id="oq1" rows="3" placeholder="Chia sẻ suy nghĩ của bạn..." style="width:100%;box-sizing:border-box;resize:vertical"></textarea>
+    </div>
+    <div>
+      <label style="font-size:14px;font-weight:500;display:block;margin-bottom:5px;line-height:1.5">Điều gì khiến bạn cảm thấy "mình có giá trị"?</label>
+      <textarea id="oq2" rows="3" placeholder="Chia sẻ suy nghĩ của bạn..." style="width:100%;box-sizing:border-box;resize:vertical"></textarea>
+    </div>
+    <div>
+      <label style="font-size:14px;font-weight:500;display:block;margin-bottom:5px;line-height:1.5">Bạn muốn cuộc sống 10 năm nữa như thế nào?</label>
+      <textarea id="oq3" rows="3" placeholder="Chia sẻ suy nghĩ của bạn..." style="width:100%;box-sizing:border-box;resize:vertical"></textarea>
+    </div>
+  </div>
+  <div style="display:flex;gap:10px">
+    <button onclick="goTo(4)">← Quay lại</button>
+    <button onclick="submitSurvey()" style="flex:1;padding:.875rem;font-weight:500">Xem kết quả của tôi →</button>
+  </div>
+</div>
+
+<!-- STEP 6: RESULTS -->
+<div id="s6" class="step"><div id="res"></div></div>
+
+</div>
+
+<script>
+const QA=[
+  {q:"Tôi có xu hướng nạp năng lượng khi ở một mình.",g:"Nhóm 1 · Hướng nội ↔ Hướng ngoại"},
+  {q:"Tôi thích làm việc độc lập hơn làm nhóm."},
+  {q:"Tôi thích các cuộc trò chuyện sâu hơn là xã giao."},
+  {q:"Tôi cảm thấy mệt khi giao tiếp quá nhiều."},
+  {q:"Tôi thích môi trường yên tĩnh để tập trung."},
+  {q:"Tôi thường quyết định dựa trên logic hơn cảm xúc.",g:"Nhóm 2 · Tư duy Logic ↔ Cảm xúc"},
+  {q:"Tôi thích phân tích nguyên nhân – kết quả."},
+  {q:"Tôi quan tâm đến hiệu quả hơn cảm nhận."},
+  {q:"Tôi thích giải quyết vấn đề phức tạp."},
+  {q:"Tôi dễ bị cuốn hút bởi công nghệ hoặc hệ thống."},
+  {q:"Tôi thích tạo ra ý tưởng mới.",g:"Nhóm 3 · Sáng tạo ↔ Cấu trúc"},
+  {q:"Tôi dễ chán với công việc lặp lại."},
+  {q:"Tôi thích tự do hơn quy tắc cứng nhắc."},
+  {q:"Tôi có nhiều ý tưởng nhưng đôi lúc khó bắt đầu."},
+  {q:"Tôi thích môi trường linh hoạt."},
+  {q:"Tôi muốn một công việc ổn định lâu dài.",g:"Nhóm 4 · Kiên định ↔ Khám phá"},
+  {q:"Tôi thích thử thách mới liên tục."},
+  {q:"Tôi muốn trải nghiệm nhiều lĩnh vực khác nhau."},
+  {q:"Tôi dễ bị thu hút bởi các xu hướng mới."},
+  {q:"Tôi sẵn sàng học lại từ đầu nếu cần."}
+];
+
+const QB=[
+  {q:"Tôi hứng thú với AI hoặc công nghệ mới.",g:"AI & Digital Adaptability"},
+  {q:"Tôi học công nghệ mới khá nhanh."},
+  {q:"Tôi không ngại bị thay đổi bởi AI."},
+  {q:"Tôi thích tối ưu công việc bằng công cụ số."},
+  {q:"Tôi muốn làm việc liên quan đến công nghệ trong tương lai."},
+  {q:"Tôi thích sửa lỗi hoặc tìm nguyên nhân vấn đề.",g:"Problem Solving"},
+  {q:"Tôi kiên nhẫn khi giải quyết việc khó."},
+  {q:"Tôi thích suy nghĩ chiến lược."},
+  {q:"Tôi thường tìm cách cải thiện hệ thống."},
+  {q:'Tôi thích cảm giác "giải được bài toán khó".'},
+  {q:"Tôi muốn công việc của mình giúp ích cho người khác.",g:"Human Impact"},
+  {q:"Tôi quan tâm đến giáo dục hoặc cộng đồng."},
+  {q:"Tôi dễ đồng cảm với người khác."},
+  {q:"Tôi muốn tạo giá trị xã hội chứ không chỉ kiếm tiền."},
+  {q:"Tôi thích truyền đạt hoặc hướng dẫn."}
+];
+
+const QC=[
+  {q:"Tôi thích môi trường quốc tế.",g:"Môi trường làm việc lý tưởng"},
+  {q:"Tôi muốn làm việc từ xa / flexible."},
+  {q:"Tôi thích startup hơn tập đoàn lớn."},
+  {q:"Tôi muốn có work-life balance."},
+  {q:"Tôi có tham vọng phát triển sự nghiệp mạnh mẽ."},
+  {q:"Tôi muốn thu nhập cao dù áp lực lớn."},
+  {q:"Tôi muốn công việc sáng tạo."},
+  {q:"Tôi muốn công việc có tính ổn định visa / tương lai."},
+  {q:"Tôi thích nghiên cứu và học chuyên sâu."},
+  {q:"Tôi muốn trở thành chuyên gia trong lĩnh vực nào đó."}
+];
+
+const ANS={A:new Array(20).fill(0),B:new Array(15).fill(0),C:new Array(10).fill(0)};
+
+function goTo(n){
+  document.querySelectorAll('.step').forEach(s=>s.style.display='none');
+  document.getElementById('s'+n).style.display='block';
+  document.getElementById('pf').style.width=(n===0?0:Math.round(n/6*100))+'%';
+}
+
+function toggleTag(btn){btn.classList.toggle('sel');}
+
+function answer(btn){
+  const s=btn.dataset.s,i=parseInt(btn.dataset.i),v=parseInt(btn.dataset.v);
+  ANS[s][i]=v;
+  btn.parentElement.querySelectorAll('.lb').forEach(b=>b.classList.remove('sel'));
+  btn.classList.add('sel');
+}
+
+function renderQ(cid,qs,sec,off){
+  const c=document.getElementById(cid);
+  if(!c)return;
+  c.innerHTML='';
+  qs.forEach((item,i)=>{
+    const row=document.createElement('div');
+    row.className='lr';
+    const gh=item.g?`<p class="lbl" style="margin-bottom:5px">${item.g}</p>`:'';
+    row.innerHTML=`${gh}<p class="lq">${off+i+1}. ${item.q}</p><div class="ls">${[1,2,3,4,5].map(v=>`<button class="lb${ANS[sec][i]===v?' sel':''}" data-s="${sec}" data-i="${i}" data-v="${v}" onclick="answer(this)">${v}</button>`).join('')}</div>`;
+    c.appendChild(row);
+  });
+}
+
+function validateAndGo(sec,to){
+  if(ANS[sec].some(v=>v===0)){
+    const fi=ANS[sec].findIndex(v=>v===0)+1;
+    alert('Vui lòng trả lời tất cả câu hỏi. Câu số '+fi+' trong phần này chưa được trả lời.');
+    return;
+  }
+  goTo(to);
+}
+
+function avg(arr){return arr.reduce((a,b)=>a+b,0)/arr.length;}
+
+const CD={
+  tech:{icon:'ti-cpu',title:'Tech & AI Engineer',sub:'Kỹ thuật công nghệ và trí tuệ nhân tạo',
+    desc:'Tư duy logic mạnh + thích ứng AI cao = combo cực mạnh nhất trong 2026–2035. Bạn phù hợp với các vai trò kỹ thuật tăng trưởng nhanh nhất toàn cầu.',
+    careers:['AI Engineer','Data Scientist','Software Engineer','Cloud Engineer','Cybersecurity'],
+    strengths:['Tư duy logic & hệ thống chuyên sâu','Thích ứng nhanh với công nghệ AI','Problem solving & tối ưu hóa'],
+    steps:['Xây dựng GitHub portfolio với project AI/Data thực tế','Hoàn thành AWS/GCP cert hoặc TensorFlow Developer Certificate','Apply internship tại Samsung, Kakao, Naver hoặc công ty tech Việt','Cân nhắc Master AI/CS tại Hàn — nhiều học bổng cho SV xuất sắc']},
+  human:{icon:'ti-heart',title:'Human-Centered Professional',sub:'Chuyên gia định hướng con người và xã hội',
+    desc:'Empathy cao + kỹ năng truyền đạt = nhóm "AI khó thay thế nhất". Bạn tạo ra giá trị kết nối người với người mà máy móc chưa làm được.',
+    careers:['UX Researcher','EdTech Specialist','HR Tech Consultant','Career Coach','Community Manager'],
+    strengths:['Empathy và kết nối con người','Kỹ năng truyền đạt và hướng dẫn','Xây dựng cộng đồng & tạo tác động'],
+    steps:['Học UX Research: Google UX Certificate hoặc Nielsen Norman Group','Tham gia project cộng đồng du học sinh Việt tại Hàn','Build portfolio với 3 case studies user research / giáo dục','Network với cộng đồng EdTech và HR Tech Hàn Quốc']},
+  creative:{icon:'ti-palette',title:'Creative Digital Maker',sub:'Sáng tạo số và thiết kế trải nghiệm',
+    desc:'Sáng tạo + công nghệ = combo đặc biệt quý giá khi AI tràn ngập. Human creativity trở thành lợi thế cạnh tranh không thể sao chép.',
+    careers:['UI/UX Designer','Product Designer','Content Strategist','Creative Technologist','Motion Designer'],
+    strengths:['Tư duy sáng tạo và đột phá','Visual & spatial thinking','Kết hợp nghệ thuật với công nghệ'],
+    steps:['Build Figma portfolio với 3–5 case studies UX/Product','Học AI-assisted design: Midjourney, Adobe Firefly, Canva AI','Tham gia hackathon thiết kế tại Hàn hoặc Việt Nam','Apply vào startup có design culture mạnh và sản phẩm user-facing']},
+  stable:{icon:'ti-microscope',title:'Research & Domain Expert',sub:'Chuyên gia nghiên cứu và hệ thống',
+    desc:'Logic cao + mong muốn chuyên sâu = con đường research hoặc domain expert. Nhóm xây dựng nền tảng bền vững và được trọng dụng dài hạn.',
+    careers:['AI Researcher','Business Analyst','Data Engineer','ERP Specialist','QA/Systems Engineer'],
+    strengths:['Tư duy hệ thống & phân tích','Kiên nhẫn và xây dựng chuyên sâu','Domain expertise dài hạn'],
+    steps:['Đăng ký lab nghiên cứu hoặc xin mentor giáo sư tại trường','Hoàn thành cert chuyên sâu: ML Specialization, SAP, hoặc PMP','Build academic portfolio: paper, thesis, project nghiên cứu','Cân nhắc Master/PhD tại Hàn — học bổng chính phủ Hàn GKS']},
+};
+
+function calcProfiles(){
+  const a1=avg(ANS.A.slice(0,5)),a2=avg(ANS.A.slice(5,10)),a3=avg(ANS.A.slice(10,15)),a4=avg(ANS.A.slice(15,20));
+  const b1=avg(ANS.B.slice(0,5)),b2=avg(ANS.B.slice(5,10)),b3=avg(ANS.B.slice(10,15));
+  return {a1,a2,a3,a4,b1,b2,b3,
+    profiles:[
+      {id:'tech',label:'Tech & AI',score:(a2+b1+b2)/3},
+      {id:'human',label:'Human Impact',score:(b3+a3)/2},
+      {id:'creative',label:'Creative Digital',score:a3*.6+b1*.4},
+      {id:'stable',label:'Research & Expert',score:((6-a4)*.5+a2*.5)}
+    ].sort((a,b)=>b.score-a.score)};
+}
+
+function renderResults(){
+  const r=calcProfiles();
+  const top=r.profiles[0];
+  const cd=CD[top.id];
+  const name=document.getElementById('i-name').value;
+  const school=document.getElementById('i-school').value;
+
+  const bars=[
+    {l:'Hướng nội',v:r.a1},{l:'Tư duy Logic',v:r.a2},{l:'Sáng tạo',v:r.a3},
+    {l:'AI Adaptability',v:r.b1},{l:'Problem Solving',v:r.b2},{l:'Human Impact',v:r.b3}
+  ];
+
+  const bHtml=bars.map(b=>`<div style="margin-bottom:10px"><div style="display:flex;justify-content:space-between;margin-bottom:4px"><span style="font-size:13px">${b.l}</span><span style="font-size:11px;color:var(--color-text-tertiary)">${b.v.toFixed(1)} / 5</span></div><div class="sb"><div class="sf" data-w="${Math.round(b.v/5*100)}" style="width:0%"></div></div></div>`).join('');
+
+  const rankHtml=r.profiles.map((p,i)=>`<div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:.5px solid var(--color-border-tertiary)"><span style="font-size:12px;color:var(--color-text-tertiary);min-width:14px">${i+1}</span><span style="font-size:13px;flex:1;font-weight:${i===0?500:400};color:${i===0?'var(--color-text-primary)':'var(--color-text-secondary)'}">${p.label}</span><div style="width:72px;height:5px;background:var(--color-border-tertiary);border-radius:3px;overflow:hidden"><div style="height:100%;width:${Math.round(p.score/5*100)}%;background:${i===0?'var(--color-text-primary)':'var(--color-border-secondary)'};border-radius:3px"></div></div><span style="font-size:11px;color:var(--color-text-tertiary);min-width:24px;text-align:right">${p.score.toFixed(1)}</span></div>`).join('');
+
+  const careersHtml=cd.careers.map(c=>`<span style="display:inline-block;padding:4px 11px;background:var(--color-background-primary);border:.5px solid var(--color-border-secondary);border-radius:100px;font-size:12px;color:var(--color-text-secondary);margin:3px">${c}</span>`).join('');
+
+  const strengthsHtml=cd.strengths.map(s=>`<div style="display:flex;gap:8px;align-items:flex-start;margin-bottom:7px"><i class="ti ti-check" style="font-size:14px;color:var(--color-text-primary);margin-top:2px;flex-shrink:0" aria-hidden="true"></i><span style="font-size:13px;color:var(--color-text-secondary);line-height:1.5">${s}</span></div>`).join('');
+
+  const stepsHtml=cd.steps.map((s,i)=>`<div style="display:flex;gap:11px;align-items:flex-start;margin-bottom:11px"><div style="min-width:21px;height:21px;border-radius:50%;background:var(--color-background-secondary);border:.5px solid var(--color-border-secondary);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:500;color:var(--color-text-secondary);flex-shrink:0">${i+1}</div><p style="font-size:13px;color:var(--color-text-secondary);line-height:1.6;margin:0">${s}</p></div>`).join('');
+
+  const promptMsg=`Tôi vừa làm khảo sát hướng nghiệp Career Compass. Kết quả: Profile chính = ${top.label}, Logic=${r.a2.toFixed(1)}/5, AI=${r.b1.toFixed(1)}/5, Sáng tạo=${r.a3.toFixed(1)}/5, Human Impact=${r.b3.toFixed(1)}/5. Hãy cho tôi lời khuyên chi tiết hơn về lộ trình sự nghiệp cụ thể phù hợp với mình.`;
+
+  document.getElementById('res').innerHTML=`
+    <div style="margin-bottom:1.5rem">
+      <p class="lbl">Kết quả phân tích · Career Compass 2026</p>
+      <h2 style="font-size:21px;font-weight:500;margin-bottom:.25rem">${name?'Xin chào, '+name+'!':'Kết quả của bạn'}</h2>
+      ${school?`<p style="font-size:13px;color:var(--color-text-tertiary);margin:0">${school}</p>`:''}
+    </div>
+    <div class="cc">
+      <div style="display:flex;align-items:center;gap:11px;margin-bottom:.875rem">
+        <div style="width:42px;height:42px;border-radius:var(--border-radius-md);background:var(--color-background-primary);border:.5px solid var(--color-border-secondary);display:flex;align-items:center;justify-content:center;flex-shrink:0">
+          <i class="ti ${cd.icon}" style="font-size:19px;color:var(--color-text-primary)" aria-hidden="true"></i>
+        </div>
+        <div>
+          <p style="font-size:10px;color:var(--color-text-tertiary);margin:0 0 2px;text-transform:uppercase;letter-spacing:.06em">Profile phù hợp nhất</p>
+          <h3 style="font-size:15px;font-weight:500;margin:0">${cd.title}</h3>
+          <p style="font-size:12px;color:var(--color-text-secondary);margin:0">${cd.sub}</p>
+        </div>
+      </div>
+      <p style="font-size:13px;color:var(--color-text-secondary);line-height:1.7;margin-bottom:.875rem">${cd.desc}</p>
+      <div>${careersHtml}</div>
+    </div>
+    <div class="cc">
+      <p style="font-size:13px;font-weight:500;margin-bottom:.75rem">Xếp hạng 4 profile</p>
+      ${rankHtml}
+    </div>
+    <div class="cc">
+      <p style="font-size:13px;font-weight:500;margin-bottom:.875rem">Phân tích điểm số chi tiết</p>
+      ${bHtml}
+    </div>
+    <div class="cc">
+      <p style="font-size:13px;font-weight:500;margin-bottom:.75rem">Điểm mạnh cốt lõi</p>
+      ${strengthsHtml}
+    </div>
+    <div class="cc">
+      <p style="font-size:13px;font-weight:500;margin-bottom:.875rem">Bước tiếp theo được đề xuất</p>
+      ${stepsHtml}
+    </div>
+    <div style="border:.5px solid var(--color-border-secondary);border-radius:var(--border-radius-lg);padding:1rem;margin-bottom:1.5rem">
+      <p style="font-size:13px;font-weight:500;margin-bottom:.5rem"><i class="ti ti-star" style="font-size:14px;margin-right:5px;vertical-align:-1px" aria-hidden="true"></i>Lợi thế đặc biệt của bạn</p>
+      <p style="font-size:13px;color:var(--color-text-secondary);line-height:1.7;margin:0">Với combo <strong>Tiếng Việt · Tiếng Hàn · Tiếng Anh</strong> + hiểu văn hóa quốc tế, bạn thuộc nhóm nhân lực được săn đón nhất trong 10 năm tới tại cả Hàn Quốc lẫn Việt Nam.</p>
+    </div>
+    <div style="display:flex;gap:10px">
+      <button onclick="goTo(0);resetAll()" style="padding:.75rem 1rem">Làm lại</button>
+      <button onclick="sendPrompt('${promptMsg.replace(/'/g,"&#39;")}')" style="flex:1;padding:.75rem">Hỏi Claude về lộ trình của tôi ↗</button>
+    </div>
+  `;
+
+  setTimeout(()=>{
+    document.querySelectorAll('.sf[data-w]').forEach(el=>{
+      el.style.width=el.dataset.w+'%';
+    });
+  },200);
+}
+
+async function submitSurvey(){
+  const data={
+    basicInfo:{
+      name:document.getElementById('i-name').value,
+      school:document.getElementById('i-school').value,
+      major:document.getElementById('i-major').value,
+      topik:document.getElementById('i-topik').value,
+      gpa:document.getElementById('i-gpa').value,
+      goals:[...document.querySelectorAll('[data-grp="goals"].sel')].map(b=>b.textContent),
+      prefs:[...document.querySelectorAll('[data-grp="prefs"].sel')].map(b=>b.textContent)
+    },
+    answers:{A:[...ANS.A],B:[...ANS.B],C:[...ANS.C]},
+    openReflection:{
+      q1:document.getElementById('oq1').value,
+      q2:document.getElementById('oq2').value,
+      q3:document.getElementById('oq3').value
+    },
+    timestamp:new Date().toISOString()
+  };
+  try{
+    await window.storage.set('survey:'+Date.now(),JSON.stringify(data),true);
+  }catch(e){}
+  goTo(6);
+  renderResults();
+}
+
+function resetAll(){
+  ANS.A.fill(0);ANS.B.fill(0);ANS.C.fill(0);
+  ['i-name','i-school','i-major','i-gpa','oq1','oq2','oq3'].forEach(id=>{
+    const el=document.getElementById(id);if(el)el.value='';
+  });
+  document.getElementById('i-topik').value='';
+  document.querySelectorAll('.tg.sel,.lb.sel').forEach(el=>el.classList.remove('sel'));
+  renderQ('qa-c',QA,'A',0);
+  renderQ('qb-c',QB,'B',20);
+  renderQ('qc-c',QC,'C',35);
+}
+
+renderQ('qa-c',QA,'A',0);
+renderQ('qb-c',QB,'B',20);
+renderQ('qc-c',QC,'C',35);
+</script>
